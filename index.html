@@ -1,67 +1,168 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CAP Garland, LLC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Abivahend OU</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #f0f0f0;
-      color: #333;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5fff5;
+      color: #2e4e2e;
+      scroll-behavior: smooth;
     }
+
     header {
-      background-color: #003366;
-      color: white;
-      padding: 30px 20px;
+      background-color: #2e7d32;
+      color: #fff;
+      padding: 50px 20px;
       text-align: center;
+      animation: fadeIn 1.5s ease-in-out;
     }
+
+    header h1 {
+      font-size: 2.8em;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
     section {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-    h1, h2 {
-      color: #003366;
-    }
-    .contact {
-      background: #fff;
-      padding: 20px;
-      border-left: 5px solid #003366;
-      margin-top: 30px;
-    }
-    footer {
-      background-color: #003366;
-      color: white;
+      padding: 60px 20px;
       text-align: center;
-      padding: 15px;
-      margin-top: 50px;
+      animation: fadeInUp 1.2s ease;
+    }
+
+    .section-img {
+      max-width: 900px;
+      margin: 30px auto;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+
+    .section-img img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .description {
+      max-width: 800px;
+      margin: 20px auto;
+      font-size: 1.1em;
+      line-height: 1.8;
+    }
+
+    .contact {
+      background-color: #e0f2e9;
+      padding: 40px 20px;
+    }
+
+    .contact h2 {
+      color: #2e7d32;
+    }
+
+    .contact p {
+      margin: 5px 0;
+      font-weight: bold;
+    }
+
+    iframe {
+      width: 100%;
+      height: 350px;
+      border: none;
+      margin-top: 30px;
+      border-radius: 12px;
+    }
+
+    footer {
+      background-color: #2e7d32;
+      padding: 20px;
+      text-align: center;
+      color: #fff;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    @keyframes fadeInUp {
+      from {opacity: 0; transform: translateY(30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2em;
+      }
+
+      .description {
+        padding: 0 10px;
+      }
     }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>CAP Garland, LLC</h1>
-    <p>Private Investment Fund</p>
+    <h1>Abivahend OU</h1>
+    <p>Reliable Business Support Solutions in Tallinn, Estonia</p>
   </header>
 
   <section>
-    <h2>About Us</h2>
-    <p>CAP Garland, LLC is a Washington-based private investment fund focused on delivering value through diversified investment strategies.</p>
-
-    <h2>Contact</h2>
-    <div class="contact">
-      <p><strong>Address:</strong> 915 W 2nd Ave, Spokane, WA 99201</p>
-      <p><strong>Email:</strong> <a href="mailto:ryanberg@capgarland.shop">ryanberg@capgarland.shop</a></p>
-      <p><strong>Phone:</strong> (509) 822-3850</p>
+    <div class="section-img">
+      <img src="https://images.unsplash.com/photo-1562577309-2592ab84b1bc?auto=format&fit=crop&w=1470&q=80" alt="Office Service">
+    </div>
+    <div class="description">
+      <p>
+        Abivahend OU provides administrative and logistical support services to growing businesses in Estonia. Our team focuses on reliability, responsiveness, and cost-effective solutions.
+      </p>
     </div>
   </section>
 
+  <section>
+    <div class="section-img">
+      <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1470&q=80" alt="Teamwork">
+    </div>
+    <div class="description">
+      <p>
+        From document management to operational consulting, we are your trusted partner for back-office efficiency. We simplify operations so you can focus on your core business.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-img">
+      <img src="https://images.unsplash.com/photo-1581090700227-1e8c7c4a3784?auto=format&fit=crop&w=1470&q=80" alt="Business Tools">
+    </div>
+    <div class="description">
+      <p>
+        Located in Tallinn, we support local entrepreneurs and international companies with professional services tailored to the Estonian market. Quality, precision, and clarity are our values.
+      </p>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <p>Email: contact@abivahendou.shop</p>
+    <p>Phone: 37258312055</p>
+    <p>Address: Maealuse tn 1, Tallinn, Estonia</p>
+
+    <iframe 
+      src="https://www.google.com/maps?q=Maealuse+tn+1+Tallinn+Estonia&output=embed"
+      loading="lazy">
+    </iframe>
+  </section>
+
   <footer>
-    &copy; 2025 CAP Garland, LLC. All rights reserved.
+    &copy; 2025 Abivahend OU – All rights reserved.
   </footer>
+
 </body>
 </html>
